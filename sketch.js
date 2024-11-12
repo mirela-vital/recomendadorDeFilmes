@@ -9,12 +9,16 @@
 // o menino que descobriu o vento, 14, drama
 
 let campoIdade;
+let campoFantasia;
+let campoAventura;
 
 function setup() {
-  createCanvas(600, 400);
-  campoIdade = createInput("15");
-  campoFantasias = createCheckbox("Gosta de fantasia?");
-  
+  createCanvas(800, 400);
+  createElement("h2", "Recomendador de filmes");
+  createSpan("Sua idade:");
+  campoIdade = createInput("5");
+  campoFantasia = createCheckbox("Gosta de fantasia?");
+  campoAventura = createCheckbox("Gosta de aventura?");
 }
 
 function draw() {
@@ -57,4 +61,3 @@ function geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura) {
     }
   }
 }
-
