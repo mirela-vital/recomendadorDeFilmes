@@ -19,6 +19,7 @@ function setup() {
   campoIdade = createInput("5");
   campoFantasia = createCheckbox("Gosta de fantasia?");
   campoAventura = createCheckbox("Gosta de aventura?");
+
 }
 
 function draw() {
@@ -26,7 +27,7 @@ function draw() {
   let idade = campoIdade.value();
   let gostaDeFantasia = campoFantasia.checked();
   let gostaDeAventura = campoAventura.checked();
-  let recomendacao = geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura);
+  let recomendaca = geraRecomendacao(idade, gostaDeFantasia, gostaDeAventura);
 
   fill(color(76, 0, 115));
   textAlign(CENTER, CENTER);
